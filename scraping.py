@@ -33,6 +33,11 @@ with open('data.csv','w',encoding='UTF8', newline='') as f:
         #print(first)
 
 
+        ws.send('''~m~36~m~{"m":"set_data_quality","p":["low"]}''')
+        ws.send('''~m~784~m~{"m":"set_auth_token","p":["eyJhbGciOiJSUzUxMiIsImtpZCI6IkdaeFUiLCJ0eXAiOiJKV1QifQ.eyJ1c2VyX2lkIjo2NTk4NDI1NiwiZXhwIjoxNjk4OTc3OTUxLCJpYXQiOjE2OTg5NjM1NTEsInBsYW4iOiJwcm9fcHJlbWl1bSIsImV4dF9ob3VycyI6MSwicGVybSI6IiIsInN0dWR5X3Blcm0iOiJ0di1wcm9zdHVkaWVzLHR2LXZvbHVtZWJ5cHJpY2UsdHYtY2hhcnRwYXR0ZXJucyx0di1jaGFydF9wYXR0ZXJucyIsIm1heF9zdHVkaWVzIjoyNSwibWF4X2Z1bmRhbWVudGFscyI6MCwibWF4X2NoYXJ0cyI6OCwibWF4X2FjdGl2ZV9hbGVydHMiOjQwMCwibWF4X3N0dWR5X29uX3N0dWR5IjoyNCwibWF4X292ZXJhbGxfYWxlcnRzIjoyMDAwLCJtYXhfYWN0aXZlX3ByaW1pdGl2ZV9hbGVydHMiOjQwMCwibWF4X2FjdGl2ZV9jb21wbGV4X2FsZXJ0cyI6NDAwLCJtYXhfY29ubmVjdGlvbnMiOjUwfQ.NQh2yFIZNT7pgQGJp8TUOQNReNu4rON2ypc9-8VEy0G0xbGKUsdz_godn8yQz0gXSrcCQFpRaMyG-EESS-At8xf4M90G6HZOv28EzV92YxwWKtljBgaus4b4wLjScxNsPbdFIMNVfmy6IAyHtL9vDiWCrDD_XBhEyR7-VRkgo9w"]}''')
+        ws.send('''~m~34~m~{"m":"set_locale","p":["en","US"]}''')
+        ws.send('''~m~83~m~{"m":"quote_create_session","p":["qs_snapshoter_basic-symbol-quotes_VahuCbWgVFBm"]}''')
+        ws.send('''~m~406~m~{"m":"quote_set_fields","p":["qs_snapshoter_basic-symbol-quotes_VahuCbWgVFBm","pro_name","base_name","short_name","description","type","exchange","typespecs","listed_exchange","lp","country_code","provider_id","symbol-primaryname","logoid","base-currency-logoid","currency-logoid","source-logoid","update_mode","source","source2","pricescale","minmov","fractional","visible-plots-set","industry","sector"]}''')
 
 
 
